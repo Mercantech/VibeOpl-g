@@ -1,0 +1,71 @@
+.hero {
+  text-align: center;
+  padding: 3rem 0 4rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: var(--accent);
+}
+
+.hero p {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.feature {
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.feature h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.feature p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.discord-banner {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-elevated));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.discord-banner h2 {
+  margin: 0 0 0.5rem;
+}
+
+.discord-banner p {
+  color: var(--text-muted);
+  margin: 0 0 1.25rem;
+}
