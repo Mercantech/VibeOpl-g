@@ -43,9 +43,28 @@ Rediger `.env` og sæt mindst:
 docker compose up --build
 ```
 
-Åbn [http://localhost](http://localhost) i browseren.
+| Service | Host-port | Beskrivelse |
+|---------|-----------|-------------|
+| Web (app) | **4010** | Forside, API-proxy — peg Cloudflare Tunnel her |
+| MinIO API | 4011 | S3-endpoint (admin) |
+| MinIO konsol | 4012 | Billedadministration |
 
-**MinIO-konsol** (billeder): [http://localhost:9001](http://localhost:9001) — login med `MINIO_ACCESS_KEY` / `MINIO_SECRET_KEY` fra `.env`.
+Åbn [http://localhost:4010](http://localhost:4010) i browseren.
+
+**MinIO-konsol:** [http://localhost:4012](http://localhost:4012) — login med `MINIO_ACCESS_KEY` / `MINIO_SECRET_KEY` fra `.env`.
+
+### Cloudflare Tunnel
+
+Peg tunnelen mod web på port 4010:
+
+```yaml
+ingress:
+  - hostname: dit-domæne.dk
+    service: http://localhost:4010
+  - service: http_status:404
+```
+
+Tilføj dit offentlige domæne til `CORS_ORIGINS` i `.env` (fx `https://dit-domæne.dk`), og genstart `api`-containeren.
 
 ### 3. Lokal udvikling (valgfrit)
 

@@ -20,8 +20,8 @@ services:
       MINIO_ROOT_USER: vibeoplg
       MINIO_ROOT_PASSWORD: vibeoplgsecret
     ports:
-      - "9000:9000"
-      - "9001:9001"
+      - "${MINIO_API_HOST_PORT:-4011}:9000"
+      - "${MINIO_CONSOLE_HOST_PORT:-4012}:9001"
     volumes:
       - miniodata:/data
 
@@ -50,7 +50,7 @@ services:
   web:
     build: ./frontend
     ports:
-      - "80:80"
+      - "${WEB_HOST_PORT:-4010}:80"
     depends_on:
       - api
 
