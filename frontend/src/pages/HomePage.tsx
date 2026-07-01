@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../api";
+import { DiscordQrCode } from "../components/DiscordQrCode";
 import "./HomePage.css";
 
 export function HomePage() {
@@ -46,11 +47,16 @@ export function HomePage() {
       </section>
 
       <section className="discord-banner">
-        <h2>Snak med os på Discord</h2>
-        <p>Del idéer, spørg om hjælp og hold kontakten med andre undervisere.</p>
-        <a href={discordUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-          Åbn Discord
-        </a>
+        <div className="discord-banner-content">
+          <div className="discord-banner-text">
+            <h2>Snak med os på Discord</h2>
+            <p>Del idéer, spørg om hjælp og hold kontakten med andre undervisere.</p>
+            <a href={discordUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              Åbn Discord
+            </a>
+          </div>
+          <DiscordQrCode url={discordUrl} />
+        </div>
       </section>
     </div>
   );
