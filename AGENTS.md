@@ -1,4 +1,4 @@
-# VibeOpl-g — Agent-orkestrering
+# Vibe Coding — Agent-orkestrering
 
 Dette projekt udvikles med seks specialiserede Cursor-agenter. Hver agent har en skill i `.cursor/skills/`.
 

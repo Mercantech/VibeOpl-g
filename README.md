@@ -1,4 +1,4 @@
-# VibeOpl-g
+# Vibe Coding
 
 Platform til undervisere der deler vibe-codede projektidéer til programmeringsundervisning.
 

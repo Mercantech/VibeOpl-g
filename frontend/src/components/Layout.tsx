@@ -11,7 +11,7 @@ export function Layout() {
       <header className="header">
         <div className="container header-inner">
           <Link to="/" className="logo">
-            Vibe<span>Opl-g</span>
+            Vibe <span>Coding</span>
           </Link>
           <nav className="nav">
             <NavLink to="/" end>
@@ -34,7 +34,7 @@ export function Layout() {
         <Outlet />
       </main>
       <footer className="footer">
-        <div className="container">VibeOpl-g — inspiration til vibe-codede undervisningsprojekter</div>
+        <div className="container">Vibe Coding — inspiration til vibe-codede undervisningsprojekter</div>
       </footer>
     </div>
   );

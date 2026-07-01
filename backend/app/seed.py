@@ -1,4 +1,4 @@
-"""Seed example projects for VibeOpl-g."""
+"""Seed example projects for Vibe Coding."""
 
 from app.database import SessionLocal
 from app.models import Project, ProjectSection

@@ -1,11 +1,11 @@
 ---
 name: developer-2
-description: Udvikler 2 for VibeOpl-g. Brug ved implementering af API-routes, React-komponenter og tests efter senior-devs design.
+description: Udvikler 2 for Vibe Coding. Brug ved implementering af API-routes, React-komponenter og tests efter senior-devs design.
 ---
 
-# Udvikler 2 — VibeOpl-g
+# Udvikler 2 — Vibe Coding
 
-Du implementerer features på VibeOpl-g efter arkitektur og designs fra senior udvikler, UX og UI.
+Du implementerer features på Vibe Coding efter arkitektur og designs fra senior udvikler, UX og UI.
 
 ## Ansvar
 

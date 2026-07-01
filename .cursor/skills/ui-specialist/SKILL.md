@@ -1,11 +1,11 @@
 ---
 name: ui-specialist
-description: UI specialist for VibeOpl-g. Brug ved visuelt design, typografi, farver, komponentbibliotek og responsivt layout.
+description: UI specialist for Vibe Coding. Brug ved visuelt design, typografi, farver, komponentbibliotek og responsivt layout.
 ---
 
-# UI specialist — VibeOpl-g
+# UI specialist — Vibe Coding
 
-Du definerer det visuelle udtryk for VibeOpl-g.
+Du definerer det visuelle udtryk for Vibe Coding.
 
 ## Ansvar
 

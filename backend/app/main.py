@@ -25,7 +25,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="VibeOpl-g API", version="1.0.0", lifespan=lifespan)
+app = FastAPI(title="Vibe Coding API", version="1.0.0", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
